@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <div id="main">
     <h1 id=title>Vacation Survey</h1>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <div id="main-div"> <br>
-      <p>Tell us about your vacation plans!!</p> 
-      <form id="survey form">
-        <lable id= "name-label" class="to-left">*Name</lable>
+      <p id="description">Tell us about your vacation plans!!</p> 
+      <form id="survey-form">
+        <label id= "name-label" class="to-left">*Name</label>
         <input autofocus id="name" type="text" placeholder="Enter your name" required><br><br>
         <label id="email-label" class="to-left">*Email</label>
-        <input id="email" required type="email" placeholder="Enter your Email"><br><br>
+        <input type="email"  id="email" placeholder="Enter your email" required><br><br>
         <label id="number-label" class="to-left">*Age</label>
-        <input id="number" type="number" placeholder="your age is?" min="1" max="100"><br><br>
+        <input id="number" type="number" placeholder="your age is?" value="1" min="1" max="100"><br><br>
          <label class="to-left">Where are your favourite vacation destinations?</label>
         <textarea placeholder="List your destinations here..." id="text-area"></textarea><br><br>
         <label class="to-left">What is your current occupation?</label>
-         <select id="drop-down">
+         <select id="dropdown">
            <option>Student</option>
            <option>Working full-time</option>
            <option>Working part-time</option>
            <option>Pensioner/Retired</option>
          </select><br><br>
-        <label class="to-left">What is your purpose of travel most of the time?<br>(Check all that apply)<br></label>
-          <input class="to-right" type="radio" name="=purpose">
+        <label class="to-left">What is your purpose of travel most of the time?<br></label>
+          <input class="to-right" type="radio" name="=purpose" value="leisure">
         <label>Lesuire</label><br>
-          <input class="to-right" type="radio" name="=purpose">
+          <input class="to-right" type="radio" name="=purpose" value="business">
         <label>Business</label><br>
-          <input class="to-right" type="radio" name="=purpose">
+          <input class="to-right" type="radio" name="=purpose" value="friends & family">
         <label>Friends & Family</label><br><br> 
         <label class="to-left"> Do you use tourist guide services?</label>
          <select id="drop-down2">
@@ -51,20 +51,21 @@
         <input class="to-right" type="checkbox" value="7"><label>Sport</label><br>
         <input class="to-right" type="checkbox" value="8"><label>Vising places as seen on TV<label><br><br>
           <label class="to-left">How often do you use a travel agnecy when making vacation plans?<br></label>
-          <input class="to-right" type="radio" name="=agency">
+          <input class="to-right" type="radio" name="=agency" value="always">
         <label>Always</label><br>
-          <input class="to-right" type="radio" name="=agency">
+          <input class="to-right" type="radio" name="=agency" value="once in a while">
         <label>Once in a while</label><br>
-          <input class="to-right" type="radio" name="=agnecy">
+          <input class="to-right" type="radio" name="=agency" value="most of the time">
         <label>Most of the time</label>
-          <input class="to-right" type="radio" name="=agency">
+          <input class="to-right" type="radio" name="=agency" value="never">
         <label>Never</label><br><br> 
         <label class="to-left">Any Comments or Suggestions?</label>
       <textarea placeholder="Enter your comment here..." id="text-area"></textarea>
       <br><br>
-      <input type="submit" id="submit-form"> 
+      <button id="submit" type="submit" value="submit">submit</button>
 
       </form>
+    </div>
     </div>
     <!--
 
